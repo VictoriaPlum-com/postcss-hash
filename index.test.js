@@ -52,7 +52,7 @@ test("defaultName module", () => {
         ext: ".css"
     };
     expect.assertions(1);
-    expect(utils.defaultName(parts)).toBe("in/file01.deadbeef.css");
+    expect(utils.defaultName(parts)).toBe("in/file01.css?v=deadbeef");
 });
 
 test("rename module", () => {

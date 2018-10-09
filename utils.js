@@ -14,7 +14,7 @@ function hash(css, algorithm, trim) {
 }
 
 function defaultName(parts) {
-    return path.join(parts.dir, parts.name + "." + parts.hash + parts.ext);
+    return path.join(parts.dir, parts.name + parts.ext + '?v=' + parts.hash);
 }
 
 /*
